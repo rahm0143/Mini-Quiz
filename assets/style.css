@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #BBC5AA;
+}
+
+/* Start Quiz Button Styling */
+
+.start-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.start-btn button {
+    display: none;
+    font-size: 25px;
+    font-weight: 500;
+    color: #24272B;
+    padding: 25px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #4a525a87;
+}
+
+.start-btn button:hover {
+    box-shadow: none;
+}
+
+/* Quiz Rules */
+
+.rules {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height: fit-content;
+    padding: 50px;
+    background-color: #DDE2C6;
+    color: #24272B;
+    border-radius: 50px;
+}
+
+.rules header {
+    background-color: #BBC5AA;
+    width: fit-content;
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 20px;
+    margin: 5px;
+    position: relative;
+    left: 35%;
+}
+
+.rules ul li {
+    background-color: #E6EED6;
+    border-radius: 50px;
+    padding: 20px;
+    margin: 5px;
+    font-weight: 300;
+    list-style: none;
+}
+
+.rules footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.exit-btn,
+.cont-btn {
+    background-color: #BBC5AA;
+    border-radius: 50px;
+    border: none;
+    padding: 20px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Quiz */
+
+.que1,
+.que2,
+.que3,
+.que4,
+.que5 {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height: fit-content;
+    padding: 50px;
+    background-color: #DDE2C6;
+    color: #24272B;
+    border-radius: 50px;
+}
+
+.que1 header,
+.que2 header,
+.que3 header,
+.que4 header,
+.que5 header {
+    background-color: #BBC5AA;
+    width: fit-content;
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 20px;
+    margin: 5px;
+    position: relative;
+    left: 10%;
+}
+
+.que1 main,
+.que2 main,
+.que3 main,
+.que4 main,
+.que5 main {
+    padding: 20px;
+    margin: 5px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.que1 ul li,
+.que2 ul li,
+.que3 ul li,
+.que4 ul li,
+.que5 ul li {
+    background-color: #E6EED6;
+    border-radius: 50px;
+    padding: 20px;
+    margin: 5px;
+    font-weight: 300;
+    list-style: none;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .next-btn {
+    background-color: #BBC5AA;
+    border-radius: 50px;
+    border: none;
+    padding: 20px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
