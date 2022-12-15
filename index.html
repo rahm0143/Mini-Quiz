@@ -3,34 +3,32 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="viewport" initial-scale="1.0">
     <title>Front End Mini Quiz | edX Carleton Bootcamps</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <header>
-        <p> Time left = <span class="timer">180</span> seconds </p>
+        <p> Time left = <span id="timer"></span></p>
     </header>
     <!-- Start Quiz Button -->
     <section class="start-btn"><button>Start Quiz</button></section>
-
-    <!-- Enter Name Input -->
 
     <!-- Rules -->
     <section class="rules">
         <header>Quiz Rules</header>
         <main>
             <ul>
-                <li>You will have 3 minutes (180 seconds) to complete the quiz</li>
+                <li>You will have 2 minutes (120 seconds) to complete the quiz</li>
                 <li>Wrong answers will result in a 10 second deduction from your time limit</li>
                 <li>You cannot exit the quiz while it is in progress</li>
                 <li>High scores can be saved and viewed at the end</li>
             </ul>
         </main>
         <footer>
-            <button class="exit-btn">Exit Quiz</button>
-            <button class="cont-btn">Continue</button>
+            <section class="exit-btn"><button class="exit-btn">Exit Quiz</button></section>
+            <section class="cont-btn"><button>Continue</button></section>
         </footer>
     </section>
 
@@ -41,15 +39,15 @@
         <main>
             What does HTML stand for ?
             <ul>
-                <li>High Throughput Markup Language</li>
-                <li>Hyper Text Markup Language</li>
-                <li>Hyper Text Multi Language</li>
-                <li>Hyper Tool Multi Language</li>
+                <li id="q1q1">High Throughput Markup Language</li>
+                <li id="q1q2">Hyper Text Markup Language</li>
+                <li id="q1q3">Hyper Text Multi Language</li>
+                <li id="q1q4">Hyper Tool Multi Language</li>
             </ul>
         </main>
         <footer>
             <p>Question 1 of 5</p>
-            <button class="next-btn">Next</button>
+            <section class="next-btn-first"><button>Next</button></section>
         </footer>
     </section>
 
@@ -59,15 +57,15 @@
         <main>
             What type of CSS file is recommended for HTML styling ?
             <ul>
-                <li>Inline style sheets</li>
-                <li>Internal style sheets</li>
-                <li>External style sheets</li>
-                <li>Embedded style sheets</li>
+                <li id="q2q1">Inline style sheets</li>
+                <li id="q2q2">Internal style sheets</li>
+                <li id="q2q3">External style sheets</li>
+                <li id="q2q4">Embedded style sheets</li>
             </ul>
         </main>
         <footer>
             <p>Question 2 of 5</p>
-            <button class="next-btn">Next</button>
+            <section class="next-btn-second"><button>Next</button></section>
         </footer>
     </section>
 
@@ -77,15 +75,15 @@
         <main>
             What type of language is JavaScript classified as ?
             <ul>
-                <li>High-level</li>
-                <li>Mid-level</li>
-                <li>Low-level</li>
-                <li>Binary code</li>
+                <li id="q3q1">High-level</li>
+                <li id="q3q2">Mid-level</li>
+                <li id="q3q3">Low-level</li>
+                <li id="q3q4">Binary code</li>
             </ul>
         </main>
         <footer>
             <p>Question 3 of 5</p>
-            <button class="next-btn">Next</button>
+            <section class="next-btn-third"><button>Next</button></section>
         </footer>
     </section>
 
@@ -95,15 +93,15 @@
         <main>
             Which of the following is not a semantic HTML tag ?
             <ul>
-                <li>article</li>
-                <li>section</li>
-                <li>aside</li>
-                <li>div</li>
+                <li id="q4q1">article</li>
+                <li id="q4q2">section</li>
+                <li id="q4q3">aside</li>
+                <li id="q4q4">div</li>
             </ul>
         </main>
         <footer>
             <p>Question 4 of 5</p>
-            <button class="next-btn">Next</button>
+            <section class="next-btn-fourth"><button>Next</button></section>
         </footer>
     </section>
 
@@ -113,30 +111,42 @@
         <main>
             What "type" of data is the following: true
             <ul>
-                <li>String</li>
-                <li>Boolean</li>
-                <li>Alphanumeric</li>
-                <li>Number</li>
+                <li id="q5q1">String</li>
+                <li id="q5q2">Boolean</li>
+                <li id="q5q3">Alphanumeric</li>
+                <li id="q5q4">Number</li>
             </ul>
         </main>
         <footer>
             <p>Question 5 of 5</p>
-            <button class="next-btn">Next</button>
+            <section class="next-btn-fifth"><button>Next</button></section>
         </footer>
     </section>
 
     <!-- Quiz End -->
-    <section class="fin">
+    <section class="end">
         <header>Front End Mini Quiz</header>
         <main>
             Congratulations ! You have completed the quiz.
+            <p id="scoreText"></p>
+            <br>
+            Enter you name to view the scorebard:
+            <br>
+            <input type="text" id="name" placeholder="Enter your name">
         </main>
         <footer>
-            <button class="score">View Scoreboard</button>
+            <section class="score-btn"><button>View Scoreboard</button></section>
         </footer>
     </section>
 
     <!-- High Scores -->
+    <section class="hiscore">
+        <header>Scoreboard</header>
+        <main id="hiscore-main">
+        </main>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
