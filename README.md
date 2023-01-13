@@ -19,8 +19,6 @@ Below are screenshots of quizplay:
 
 Link to the deployed application: https://rnvshi.github.io/Mini-Quiz/
 
-## Credits
-
 ## License
 
 Refer to licence in repository.
